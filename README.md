@@ -30,12 +30,12 @@ This will run your server on port
 
 ### Live Link
 
- <a href='https://to-do-app-achiengy.vercel.app/'>todo-app<a/>
+ <a href='https://to-do-server.vercel.app/'>todo-app<a/>
 
 
 ### Frontend Repository
 
-<a href='https://github.com/Achiengy/ToDo-App.git'>front_end repo<a/>
+<a href='https://github.com/rahimedu/react-to-do-list.git'>front_end repo<a/>
 
 
 ## Resources
