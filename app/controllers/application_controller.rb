@@ -6,6 +6,10 @@ class ApplicationController < Sinatra::Base
     todos.to_json
   end
   
+  post "/todos" do
+    todo = Todo.create(tasks: params[:tasks] )
+    todo.to_json
+  end
   
   patch "/todos/:id" do
     todo = Todo.find(params[:id])
