@@ -11,11 +11,6 @@ class ApplicationController < Sinatra::Base
     todo.to_json
   end
   
-  patch "/todos/:id" do
-    todo = Todo.find(params[:id])
-    message = Message.create(user_id: params[:user_id], tasks: params[:tasks])
-    todo.to_json
-  end
   
   delete "/todos/:id" do
     todo = Todo.find(params[:id])
