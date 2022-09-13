@@ -1,7 +1,10 @@
 class ApplicationController < Sinatra::Base
   set :default_content_type, 'application/json'
   
- 
+  get "/todos" do
+    todos = Todo.all.order(:created_at)
+    todos.to_json
+  end
   
   post "/todos" do
     todo = Todo.create(tasks: params[:tasks] )
